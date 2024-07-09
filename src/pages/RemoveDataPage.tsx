@@ -4,7 +4,7 @@ import {Flex, Typography} from "antd";
 const {Text, Paragraph} = Typography;
 function RemoveDataPage() {
     return (
-        <Flex vertical align="center"  className="box">
+        <Flex vertical align="center" className="box">
             <Text style={{fontSize: "2rem"}}>Žádost o výmaz uživatelských dat z aplikace Moje Garáž</Text>
             <Paragraph>
                 Pokud máte zájem o smazání uživatelského účtu, postupujte podle následujících instrukcí:

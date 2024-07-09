@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouteObject, RouterProvider} from "react-router-dom";
+import {BrowserRouter, createBrowserRouter, Route, RouteObject, RouterProvider, Routes} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import PrivacyPage from "./pages/PrivacyPage";
 import RemoveDataPage from "./pages/RemoveDataPage";
 import ErrorPage from "./pages/ErrorPage";
+import {Col} from "antd";
 
 const routes: RouteObject[] = [
     {
@@ -33,7 +34,17 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-      <RouterProvider router={createBrowserRouter(routes)}/>
+      <Col>
+          <BrowserRouter>
+              <Routes>
+                  <Route path="/" element={<HomePage/>}/>
+                  <Route path="/privacy" element={<PrivacyPage/>}/>
+                  <Route path="/request" element={<RemoveDataPage/>}/>
+                  <Route path="*" element={<ErrorPage/>}/>
+              </Routes>
+          </BrowserRouter>
+      </Col>
+
   </React.StrictMode>
 );
 
