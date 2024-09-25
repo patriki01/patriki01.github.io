@@ -33,3 +33,7 @@ code {
   width: 95%;
   background-color: #a3dbfa;
 }
+
+.round {
+  border-radius: 15px;
+}

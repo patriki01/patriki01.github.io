@@ -6,7 +6,7 @@ export default function ErrorPage() {
 
     return (
         <Flex vertical align="center" id="error-page">
-            <h1>Oops!</h1>
+            <h1>Oops???!</h1>
             <p>Sorry, an unexpected error has occurred.</p>
         </Flex>
 );

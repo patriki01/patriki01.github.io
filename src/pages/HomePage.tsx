@@ -2,7 +2,7 @@ import React from 'react';
 
 function HomePage() {
     return (
-        <div>Home page of developer Patrik Rosecky1</div>
+        <div>NEW Home page of developer Patrik Rosecky1</div>
     );
 }
 
